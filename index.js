@@ -10,10 +10,10 @@ Object.keys(images).sort(() => Math.random() - 0.5).forEach(it => {
   img.src = images[it]
   slide.appendChild(img)
 })
-const swiper = new window.Swiper('.swiper-container', {
+const swiper = new window.Swiper('.swiper', {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
