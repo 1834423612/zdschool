@@ -1,4 +1,4 @@
-const bgs = require('./assets/backgrounds/*.jpg')
+const bgs = require('./assets/backgrounds/1.jpg')
 const images = require('./assets/images/*.jpg')
 
 const keys = Object.keys(bgs)
