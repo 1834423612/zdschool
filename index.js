@@ -1,5 +1,5 @@
-const bgs = require('./assets/backgrounds/*.png')
-const images = require('./assets/images/*.png')
+const bgs = require('./assets/backgrounds/*.jpg')
+const images = require('./assets/images/*.jpg')
 
 const keys = Object.keys(bgs)
 document.getElementById('first').style.backgroundImage = `url(${bgs[keys[Math.random() * keys.length | 0]]})`
