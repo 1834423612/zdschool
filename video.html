@@ -9,7 +9,6 @@
 <body>
     <script src="//unpkg.com/xgplayer@2.31.6/dist/index.js" type="text/javascript"></script>
     <script src="//unpkg.com/xgplayer@2.31.6/dist/simple_player.js" type="text/javascript"></script>
-    <script src="//unpkg.com/xgplayer@2.31.6/dist/controls/playbackRate.js" type="text/javascript"></script>
 
     <div id="video"></div>
 
@@ -17,15 +16,8 @@
         new Player({
             id: 'video',
             url: 'https://file.kjchmc.cn/2022.mp4',
-            poster: "/assets/poster.jpg",
-            autoplay: false,
-            playsinline: true,
-            fitVideoSize: 'auto',
-            controlPlugins: [
-                window.PlayerControls.volume,
-                window.PlayerControls.playbackRate
-            ],
-            playbackRate: [0.5, 0.75, 1, 1.5, 2] //传入倍速可选数组
+            poster: '/assets/poster.jpg',
+            fitVideoSize: 'auto'
         });
     </script>
 </body>
