@@ -1,8 +1,8 @@
-const bgs = require('./assets/backgrounds/*.jpg')
+/*const bgs = require('./assets/backgrounds/*.jpg')*/
 const images = require('./assets/images/*.jpg')
 
-const keys = Object.keys(bgs)
-document.getElementById('first').style.backgroundImage = `url(${bgs[keys[Math.random() * keys.length | 0]]})`
+/*const keys = Object.keys(bgs)*/
+/*document.getElementById('first').style.backgroundImage = `url(${bgs[keys[Math.random() * keys.length | 0]]})`*/
 const slide = document.getElementById('slide')
 Object.keys(images).sort(() => Math.random() - 0.5).forEach(it => {
   const img = new Image()
