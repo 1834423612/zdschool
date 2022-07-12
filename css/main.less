@@ -1,4 +1,8 @@
 @import './minecraft.less';
+@import "/css/fontawasome/fontawesome.less";
+@import "/css/fontawasome/solid.less";
+@import "/css/fontawasome/brands.less";
+@import "/css/fontawasome/regular.less";
 
 section, main {
   display: block;
@@ -232,16 +236,8 @@ footer a {
 }
 
 /*Font Awasome*/
-    .icon::before {
-      display: inline-block;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-    }
-  
-    .icon-solid::before {
-      font: var(--fa-font-solid);
-    }
-  
-    .circle-play::before {
-      content: "\f144";
-    }
+@fa-font-path: "./css/fontawasome";
+
+.circle-play {
+  .fa-icon-solid(@fa-var-circle-play);
+}
