@@ -232,12 +232,16 @@ footer a {
 }
 
 /*Font Awasome*/
-  .icon::before {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-  .circle-play::before {
-    font: var(--fa-font-solid);
-    content: "\f144";
-  }
+    .icon::before {
+      display: inline-block;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+  
+    .icon-solid::before {
+      font: var(--fa-font-solid);
+    }
+  
+    .circle-play::before {
+      content: "\f144";
+    }
