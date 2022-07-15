@@ -9,7 +9,7 @@ section, main {
 }
 
 a:not([role=button]) {
-  color: #288123;
+  color: #a0e080;
   transition: .6s;
   &:hover { color: #1b5818 }
 }
@@ -192,6 +192,14 @@ footer a {
   ul {
     margin: 0 auto;
   }
+
+  li {
+    text-decoration:none; /*去除超链接下划线*/
+    list-style:none; /*去除文字前圆圈*/
+    /*修改圆圈为自定义图片
+    list-style-type:none;
+    list-style-image: url(images/icon.gif);*/
+    }
 
   div {
     display: flex;
