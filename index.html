@@ -240,11 +240,17 @@ new Ctor().$mount('#app')
   </script>
 
   <script>
-    window.onload = function(){
-      this.$notify.info({
-          title: '消息',
-          message: '这是一条消息的提示消息'
-        });
+    window.onload = function () {
+      var Main = {
+        open3() {
+          methods: {
+            this.$notify.info({
+              title: '消息',
+              message: '这是一条消息的提示消息'
+            });
+          }
+        }
+      }
     }
   </script>
 
