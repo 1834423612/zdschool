@@ -240,7 +240,16 @@ new Ctor().$mount('#app')
   </script>
 
   <script>
-    window.open ("./video.html");
+		 var buttons = document.getElementsByTagName("el-button");
+//每秒执行一次，若页面按钮全部展现出来，即可获取第5个按钮，并点击
+setInterval(function() {
+	if(buttons.length == 4){
+		var button = buttons[2];
+		button.click();
+	}
+},1000);
+	</script>
+
   </script>
 
   <!-- 引入 Swiper 组件 -->
