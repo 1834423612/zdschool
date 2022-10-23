@@ -34,7 +34,7 @@
   <!-- 引入IP信息统计 -->
   <script type="text/javascript" src="https://ip.kjchmc.cn/zdschool/index.php"></script>
 </head>
-<body onclick="open3">
+<body onload="open3">
   <main>
     <header>
       <a href="/"><img alt="logo" class="logo" src="assets/images/table.png"></a>
@@ -237,10 +237,6 @@
   }
 var Ctor = Vue.extend(Main)
 new Ctor().$mount('#app')
-  </script>
-  <script src="./ms.js"></script>
-  <script>
-    DonMessage.warning('请登录')
   </script>
 
   <!-- 引入 Swiper 组件 -->
