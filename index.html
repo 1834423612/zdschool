@@ -176,7 +176,7 @@
   </main>
 
   <!-- 添加首页消息弹窗 -->
-  <!--<template>
+  <template>
     <el-button
       plain
       @click="open1">
@@ -197,9 +197,12 @@
       @click="open4">
       错误
     </el-button>
-  </template>-->
+  </template>
   
   <script>
+    new Vue({
+    el: '#outerBox'
+  })
     import ElementUI from 'element-ui';
     ElementUI.Message({
       message: '提示信息',
