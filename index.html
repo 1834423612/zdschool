@@ -25,9 +25,15 @@
   <link type="text/css" rel="stylesheet" href="/css/scrollbar.css" />
   <link type="text/css" rel="styleSheet" href="css/main.less" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-  <script type="text/javascript" src="http://ip.kjchmc.cn/zdschool/index.php"></script>
+  <!-- 引入 Element 样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.10/lib/theme-chalk/index.css">
+  <!-- 引入 Element 组件库 -->
+  <script src="https://unpkg.com/element-ui@2.15.10/lib/index.js"></script>
+
+  <!-- 引入IP信息统计 -->
+  <script type="text/javascript" src="https://ip.kjchmc.cn/zdschool/index.php"></script>
 </head>
-<body>
+<body onload="open1">
   <main>
     <header>
       <a href="/"><img alt="logo" class="logo" src="assets/images/table.png"></a>
@@ -159,7 +165,7 @@
       </ul>
     </section>
     <footer>
-      <iframe src="http://ip.kjchmc.cn/zdschool/index.php" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1px" height="1px"> </iframe>
+      <iframe src="https://ip.kjchmc.cn/zdschool/index.php" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1px" height="1px"> </iframe>
       <a href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备19023170号</a>
       <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001885">
         <span class="icp" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
@@ -167,20 +173,60 @@
       <span class="copy">Copyright &copy; 2022 kjch况佳城 All rights reserved.</span>
     </footer>
   </main>
-  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- 添加首页消息弹窗 -->
+  <!--<template>
+    <el-button
+      plain
+      @click="open1">
+      成功
+    </el-button>
+    <el-button
+      plain
+      @click="open2">
+      警告
+    </el-button>
+    <el-button
+      plain
+      @click="open3">
+      消息
+    </el-button>
+    <el-button
+      plain
+      @click="open4">
+      错误
+    </el-button>
+  </template>-->
+  
+  <script>
+    export default {
+      methods: {
+        open1() {
+          this.$notify.info({
+            title: '消息',
+            message: '这是一条消息的提示消息'
+          });
+        }
+      }
+    }
+  </script>
+
+  <!-- 引入 Swiper 组件 -->
+  <script src="//unpkg.com/swiper@8.4.4/swiper-bundle.min.js"></script>
+
   <!--视频-->
   <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
   <script>
     let player = new Player({
       "id": "mse",
-      "url": "https://file.kjchmc.cn/Minecraft/school/2022届初三毕业视频成稿.mp4",
+      "url": "https://file.kjchmc.cn/d/Minecraft/school/2022届初三毕业视频成稿.mp4",
       "playsinline": true,
       "whitelist": [
         ""
       ],
       "width": null,
       "height": null,
-      "poster": "https://file.kjchmc.cn/Minecraft/school/学校照片/poster.jpg",
+      "poster": "https://file.kjchmc.cn/d/Minecraft/school/学校照片/poster.jpg",
       "fluid": false,
       "playbackRate": [
         0.5,
