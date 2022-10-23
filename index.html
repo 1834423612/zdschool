@@ -200,7 +200,8 @@
   </template>-->
   
   <script>
-    import { Notification } from 'element-ui';
+    import { Message } from 'element-ui'
+    Vue.prototype.$notify = Notification
     export default {
       methods: {
         open1() {
