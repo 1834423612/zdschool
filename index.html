@@ -241,18 +241,17 @@ new Ctor().$mount('#app')
 
   <script>
 		 var buttons = document.getElementsByTagName("button");
-     var buttons = clickId;
 //自动点击的方法 clickId 点击事件的id属性值  字符串类型
-function autoClick(clickId) {
+function autoClick(buttons) {
     // IE
     if (document.all) {
-        document.getElementById(clickId).click();
+        document.getElementById(buttons).click();
     }
     // 其它浏览器
     else {
         var e = document.createEvent("MouseEvents");
         e.initEvent("click", true, true);
-        document.getElementById(clickId).dispatchEvent(e);
+        document.getElementById(buttons).dispatchEvent(e);
     }
 }
 	</script>
