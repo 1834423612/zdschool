@@ -176,7 +176,7 @@
   </main>
 
   <!-- 添加首页消息弹窗 -->
-  <div id="app">
+  <!--<div id="app">
   <template>
     <el-button
       plain
@@ -199,7 +199,7 @@
       错误
     </el-button>
   </template>
-</div>
+</div>-->
   
   <script>
     var Main = {
@@ -226,7 +226,7 @@
           message: '这是一条消息的提示消息',
           duration: 0,
           showClose: true,
-          offset: 40
+          offset: 50
         });
       },
 
@@ -244,7 +244,7 @@ new Ctor().$mount('#app')
 
   <script>
 		 var buttons = document.getElementsByTagName("button");
-//每秒执行一次，若页面按钮全部展现出来，即可获取第5个按钮，并点击
+//仅执行一次，若页面4个按钮全部显示，立即获取第3个按钮，并自动点击
 setTimeout(function() {
 	if(buttons.length == 4){
 		var button = buttons[2];
