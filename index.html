@@ -200,14 +200,17 @@
   </template>
   
   <script>
-    new Vue({
-    el: '#outerBox'
-  })
-    import ElementUI from 'element-ui';
-    ElementUI.Message({
-      message: '提示信息',
-      type: 'warning'
-    });
+    var Main = {
+    methods: {
+      open() {
+        this.$notify.success({
+          title: 'Info',
+          message: '这是一条没有关闭按钮的消息',
+          showClose: false
+        });
+      }
+    }
+  }
   </script>
 
   <!-- 引入 Swiper 组件 -->
