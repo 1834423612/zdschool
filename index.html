@@ -200,18 +200,11 @@
   </template>-->
   
   <script>
-    import { Message } from 'element-ui'
-    Vue.prototype.$notify = Notification
-    export default {
-      methods: {
-        open1() {
-          this.$notify.info({
-            title: '消息',
-            message: '这是一条消息的提示消息'
-          });
-        }
-      }
-    }
+    import ElementUI from 'element-ui';
+    ElementUI.Message({
+      message: '提示信息',
+      type: 'warning'
+    });
   </script>
 
   <!-- 引入 Swiper 组件 -->
