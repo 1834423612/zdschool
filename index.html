@@ -241,13 +241,20 @@ new Ctor().$mount('#app')
 
   <script>
 		 var buttons = document.getElementsByTagName("button");
-//每秒执行一次，若页面按钮全部展现出来，即可获取第5个按钮，并点击
-function() {
-	if(buttons.length == 4){
-		var button = buttons[2];
-		button.click();
-	}
-};
+     var buttons = clickId;
+//自动点击的方法 clickId 点击事件的id属性值  字符串类型
+function autoClick(clickId) {
+    // IE
+    if (document.all) {
+        document.getElementById(clickId).click();
+    }
+    // 其它浏览器
+    else {
+        var e = document.createEvent("MouseEvents");
+        e.initEvent("click", true, true);
+        document.getElementById(clickId).dispatchEvent(e);
+    }
+}
 	</script>
 
   </script>
