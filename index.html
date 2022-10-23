@@ -34,7 +34,7 @@
   <!-- 引入IP信息统计 -->
   <script type="text/javascript" src="https://ip.kjchmc.cn/zdschool/index.php"></script>
 </head>
-<body onload="open1">
+<body onclick="open3">
   <main>
     <header>
       <a href="/"><img alt="logo" class="logo" src="assets/images/table.png"></a>
@@ -176,6 +176,7 @@
   </main>
 
   <!-- 添加首页消息弹窗 -->
+  <div id="app">
   <template>
     <el-button
       plain
@@ -198,19 +199,44 @@
       错误
     </el-button>
   </template>
+</div>
   
   <script>
     var Main = {
     methods: {
-      open() {
-        this.$notify.success({
-          title: 'Info',
-          message: '这是一条没有关闭按钮的消息',
-          showClose: false
+      open1() {
+        this.$notify({
+          title: '成功',
+          message: '这是一条成功的提示消息',
+          type: 'success'
+        });
+      },
+
+      open2() {
+        this.$notify({
+          title: '警告',
+          message: '这是一条警告的提示消息',
+          type: 'warning'
+        });
+      },
+
+      open3() {
+        this.$notify.info({
+          title: '消息',
+          message: '这是一条消息的提示消息'
+        });
+      },
+
+      open4() {
+        this.$notify.error({
+          title: '错误',
+          message: '这是一条错误的提示消息'
         });
       }
     }
   }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
   </script>
 
   <!-- 引入 Swiper 组件 -->
