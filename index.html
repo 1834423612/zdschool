@@ -199,7 +199,25 @@
   </template>-->
   
   <script>
-    import { Message } from 'element-ui';
+    import Vue from 'vue'
+    import {
+      Button,
+      Form,
+      FormItem,
+      Message,
+      MessageBox
+    } from 'element-ui'
+
+    Vue.use(Button)
+    Vue.use(Form)
+    Vue.use(FormItem)
+
+    // 将Mesage挂载到vue原型对象上
+    Vue.prototype.$message = Message
+
+    // 将MessageBox挂载到vue原型对象上
+    Vue.prototype.$confirm = MessageBox.confirm
+
     export default {
       methods: {
         open1() {
