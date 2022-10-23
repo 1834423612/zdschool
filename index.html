@@ -202,17 +202,7 @@
 </div>
   
   <script>
-    window.onload = function () {
-      var Main = {
-        methods: {
-          open3() {
-            this.$notify.info({
-              title: '消息',
-              message: '这是一条消息的提示消息'
-            });
-          }
-        }
-      }
+    window.addEventListener("load", open3, false);
     var Main = {
     methods: {
       open1() {
