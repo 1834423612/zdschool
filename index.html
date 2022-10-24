@@ -214,9 +214,10 @@
 
       open3() {
         this.$notify.info({
-          title: '消息',
-          message: '这是一条消息的提示消息',
-          duration: 0,
+          title: '通知',
+          message: '本建筑项目目前处于<font color="red"><strong>低更新频率</strong></font>，短时间内可能不会有大更新，详情请见顶部<b>关于本项目</b>查看最新状态！',
+          dangerouslyUseHTMLString: true,
+          duration: 15000,
           showClose: true,
           offset: 50
         });
