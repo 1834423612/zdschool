@@ -185,13 +185,13 @@ a.mc-skip-to-main:active {
     margin: 0 auto
 }
 
-.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigger-dungeons img {
+/*.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigger-dungeons img {
     content: url(../../../content/dam/games/minecraft/logos/hamburger-dungeons-icon.png)
 }
 
 button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigger-badger img {
     content: url(../../../content/dam/games/minecraft/logos/badger-open.svg)
-}
+}*/
 
 .mc-globalhead__navcontainer {
     background-color: #171615;
@@ -647,7 +647,7 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
 }
 
 @media only screen and (min-width:577px) {
-    .mc-globalhead__drop-container .mc-globalhead__drop-trigger .mc-globalhead__drop-trigger-text.mc-chevron {
+    /*.mc-globalhead__drop-container .mc-globalhead__drop-trigger .mc-globalhead__drop-trigger-text.mc-chevron {
         background-image: url(../../../content/dam/games/minecraft/logos/down-arrow.png);
         background-repeat: no-repeat;
         background-size: 10px 6px;
@@ -702,7 +702,7 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
         background-repeat: no-repeat;
         background-size: 10px 6px;
         background-position: 100% 50%
-    }
+    }*/
 
     .mc-globalhead__accountnav .mc-globalhead__drop-container.mc-globalhead__drop-active .mc-globalhead__drop-trigger-text.mc-chevron {
         color: #fff
