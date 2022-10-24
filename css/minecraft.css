@@ -1,3 +1,6 @@
+li {
+    list-style-type: none;
+}
 .mc-skip-to-main {
     position: absolute;
     top: auto;
@@ -119,10 +122,10 @@ a.mc-skip-to-main:active {
 }
 
 .mc-button__primary {
-    padding: 15px 24px;
+    padding: 7px 15px; /*15px 24px*/
     border: none;
-    font-size: 1.125rem;
-    line-height: 20px;
+    font-size: 0.95rem; /*1.125rem*/
+    /*line-height: 20px;*/
     font-weight: 700;
     letter-spacing: .03em;
     text-transform: uppercase;
@@ -1562,7 +1565,7 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
     .mc-globalhead__accountnav .mc-globalhead__btnlist-container {
         justify-content: center;
         align-items: center;
-        display: inline-flex;
+        /*display: inline-flex;*/
         margin-left: 10px
     }
 
@@ -1659,7 +1662,7 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
     }
 
     nav.mc-globalhead__accountnav {
-        width: 40%
+        width: 100%
     }
 }
 
