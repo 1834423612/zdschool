@@ -1,9 +1,10 @@
 name: Auto build CI
 
+# ci触发的条件
 on:
-  release:
-    types:
-      - created
+  push: # 什么请求触发
+    branches: 
+    - master： # 作用在哪些分支上
 
 jobs:
   release:
