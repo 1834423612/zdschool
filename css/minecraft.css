@@ -1706,9 +1706,9 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
     fill: #fff
 }
 
-.master-head {
+/*.master-head {
     background: url(../../../content/dam/minecraft/backgrounds/bg-wool-dark.png)
-}
+}*/
 
 nav.mc-globalhead__accountnav.mc-globalhead__topnav {
     width: 50%
