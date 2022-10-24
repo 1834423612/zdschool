@@ -216,6 +216,22 @@ option, select {
   text-decoration: none;
 }
 
+.btn1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+}
+
 .btn .grow::after {
   box-shadow: 0 0 0 0 rgba(0,0,0,.15)
 }
@@ -250,7 +266,7 @@ option, select {
 }
 
 /*新增*/
-.btn-primary1 .grow,.btn-primary1::before {
+.btn1-primary .grow,.btn1-primary::before {
   background-color: #49b1f5;
   /*box-shadow: 0 -4px rgba(21,108,0,.5) inset,0 4px rgba(100,253,31,.99) inset,-4px 0 rgba(100,253,31,.5) inset,4px 0 rgba(21,108,0,.5) inset;*/
 }
@@ -262,6 +278,10 @@ option, select {
 }
 
 .btn-primary {
+  color: #fff!important
+}
+
+.btn1-primary {
   color: #fff!important
 }
 
