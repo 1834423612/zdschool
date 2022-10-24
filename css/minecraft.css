@@ -1332,11 +1332,12 @@ button.mc-globalhead__mobilecontrols-trigger.mc-globalhead__mobilecontrols-trigg
         justify-content: right
     }
 
+    /*需要*/
     .mc-globalhead__navsection {
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
-        width: 100%
+        width: 62%
     }
 
     .mc-globalheader__logocontainer {
