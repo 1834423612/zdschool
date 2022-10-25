@@ -239,7 +239,9 @@
             duration: 15000,
             showClose: true,
             offset: 50,
-            onClose: alert('this is test alert.')
+            onClose: function () {
+              console.log('Test\n通知已关闭')
+            }
           });
         },
 
