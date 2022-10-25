@@ -43,5 +43,5 @@ jobs:
           token: ghp_66X0S62ygQzdbFLnBh8b03DFXl3j3t0XwNXy
           repository-name: 1834423612/zdschool
           branch: gh-pages
-          folder: build
+          folder: '.'
           commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'
