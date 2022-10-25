@@ -40,7 +40,7 @@ jobs:
       - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ghp_66X0S62ygQzdbFLnBh8b03DFXl3j3t0XwNXy
+          token: ${{ secrets.ACCESS_TOKEN }}
           repository-name: 1834423612/zdschool
           branch: gh-pages
           folder: '.'
