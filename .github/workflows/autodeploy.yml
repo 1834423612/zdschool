@@ -1,0 +1,42 @@
+# 当有改动推送到master分支时，启动Action
+name: 自动部署
+# 当有改动推送到master分支时，启动Action
+on:
+  push:
+    branches:
+      - master
+      #2020年10月后github新建仓库默认分支改为main，注意更改
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: 安装 Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: 安装 环境
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install
+
+      - name: build
+        run: |
+          npm run build
+
+      - name: 部署到Github
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ghp_66X0S62ygQzdbFLnBh8b03DFXl3j3t0XwNXy
+          repository-name: 1834423612/zdschool
+          branch: gh-pages
+          commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'
