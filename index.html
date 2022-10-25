@@ -184,7 +184,7 @@
       </ul>
     </section>
     <footer>
-      <iframe src="https://ip.kjchmc.cn/zdschool/index.php" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1px" height="1px"> </iframe>
+      <!--<iframe src="https://ip.kjchmc.cn/zdschool/index.php" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1px" height="1px"> </iframe>-->
       <a href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备19023170号</a>
       <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001885">
         <span class="icp" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
@@ -194,6 +194,7 @@
   </main>
 
   <!-- 添加首页消息弹窗 -->
+  <!-- 添加并隐藏Element组件按钮 -->
   <div id="app">
   <template>
     <el-button plain @click="open1" style="display: none;">
@@ -213,63 +214,64 @@
   
   <script>
     var Main = {
-    methods: {
-      open1() {
-        this.$notify({
-          title: '成功',
-          message: '这是一条成功的提示消息',
-          type: 'success'
-        });
-      },
+      methods: {
+        open1() {
+          this.$notify({
+            title: '成功',
+            message: '这是一条成功的提示消息',
+            type: 'success'
+          });
+        },
 
-      open2() {
-        this.$notify({
-          title: '警告',
-          message: '这是一条警告的提示消息',
-          type: 'warning'
-        });
-      },
+        open2() {
+          this.$notify({
+            title: '警告',
+            message: '这是一条警告的提示消息',
+            type: 'warning'
+          });
+        },
 
-      open3() {
-        this.$notify.info({
-          title: '通知',
-          message: '本建筑项目目前处于<font color="red"><strong>低更新频率</strong></font>，短时间内可能不会有大更新，详情请见顶部<b>关于本项目</b>查看最新状态！',
-          dangerouslyUseHTMLString: true,
-          duration: 15000,
-          showClose: true,
-          offset: 50
-        });
-      },
+        open3() {
+          this.$notify.info({
+            title: '通知',
+            message: '本建筑项目目前处于<font color="red"><strong>低更新频率</strong></font>，短时间内可能不会有大更新，详情请见下方<strong>关于本项目</strong>查看最新状态！',
+            dangerouslyUseHTMLString: true,
+            duration: 15000,
+            showClose: true,
+            offset: 50,
+            onClose: alert('this is test alert.')
+          });
+        },
 
-      open4() {
-        this.$notify.error({
-          title: '错误',
-          message: '这是一条错误的提示消息'
-        });
+        open4() {
+          this.$notify.error({
+            title: '错误',
+            message: '这是一条错误的提示消息'
+          });
+        }
       }
     }
-  }
-var Ctor = Vue.extend(Main)
-new Ctor().$mount('#app')
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#app')
   </script>
 
   <script>
-		 var buttons = document.getElementsByTagName("button");
-//仅执行一次，若页面4个按钮全部显示，立即获取第3个按钮，并自动点击
-setTimeout(function() {
-	if(buttons.length == 4){
-		var button = buttons[2];
-		button.click();
-	}
-},1000);
-	</script>
+    var buttons = document.getElementsByTagName("button");
+    //仅执行一次，若页面4个按钮全部显示，立即获取第3个按钮，并自动执行一次点击
+    setTimeout(function () {
+      if (buttons.length == 4) {
+        var button = buttons[2];
+        button.click();
+      }
+    }, 1000);
+  </script>
 
   </script>
 
   <!-- 引入 Swiper 组件 -->
   <script src="//unpkg.com/swiper@8.4.4/swiper-bundle.min.js"></script>
 
-  <!--视频-->
+  <!-- 引入西瓜视频播放器组件 -->
   <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
   <script>
     let player = new Player({
