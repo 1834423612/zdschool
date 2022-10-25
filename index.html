@@ -203,7 +203,7 @@
     <el-button plain @click="open2" style="display: none;">
       Button2
     </el-button>
-    <el-button plain @click="open3">
+    <el-button plain @click="open3" style="display: none;">
       消息
     </el-button>
     <el-button plain @click="open4" style="display: none;">
@@ -239,9 +239,6 @@
             duration: 15000,
             showClose: true,
             offset: 50,
-            onclick: () => {
-              alert("test");
-            }
           });
         },
 
@@ -266,8 +263,6 @@
         button.click();
       }
     }, 1000);
-  </script>
-
   </script>
 
   <!-- 引入 Swiper 组件 -->
