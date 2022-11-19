@@ -1,8 +1,8 @@
-@import 'https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/minecraft.less';
-@import "https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/fontawasome/fontawesome.less";
-@import "https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/fontawasome/solid.less";
-@import "https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/fontawasome/brands.less";
-@import "https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/fontawasome/regular.less";
+@import './minecraft.less';
+@import "/css/fontawasome/fontawesome.less";
+@import "/css/fontawasome/solid.less";
+@import "/css/fontawasome/brands.less";
+@import "/css/fontawasome/regular.less";
 
 section, main {
   display: block;
@@ -34,7 +34,7 @@ header {
   padding-right: 20px;
   color: rgba(255, 255, 255, 0.95);
   display: flex;
-  background: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/bg-wool-dark.png) repeat-x;
+  background: url(../assets/bg-wool-dark.png) repeat-x;
   background-size: 100%;
   box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14),
     0px 3px 16px 2px rgba(0, 0, 0, 0.12);
@@ -92,7 +92,7 @@ footer a {
   padding: 100px 0 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.86);
-  background-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/bg-wool-dark.png);
+  background-image: url(../assets/bg-wool-dark.png);
   box-shadow: 0 -5px 6px -3px rgba(0, 0, 0, 0.2), 0 -9px 12px 1px rgba(0, 0, 0, 0.14),
     0 -3px 16px 2px rgba(0, 0, 0, 0.12);
   .img {
@@ -152,8 +152,8 @@ footer a {
 #third {
   text-align: center;
   padding: 120px 0;
-  background-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/trans-top-darkwool.png),
-    url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/trans-bottom-darkwool.png), url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/bg-wool-white.png);
+  background-image: url(../assets/trans-top-darkwool.png),
+    url(../assets/trans-bottom-darkwool.png), url(../assets/bg-wool-white.png);
   background-position: center top, center bottom, top;
   background-repeat: repeat-x, repeat-x, repeat;
   background-attachment: scroll, scroll, fixed;
@@ -183,7 +183,7 @@ footer a {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.86);
-  background-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/bg-wool-dark.png);
+  background-image: url(../assets/bg-wool-dark.png);
 
   h1 {
     margin: 20px auto;
@@ -199,7 +199,7 @@ footer a {
     /*list-style:none;*/ /*去除文字前圆圈*/
     /*修改圆圈为自定义图片*/
     list-style-type:none;
-    list-style-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/arrow.png);
+    list-style-image: url(../assets/images/arrow.png);
     margin: 5px 0px;
     }
 
@@ -208,7 +208,7 @@ footer a {
     /*list-style:none;*/ /*去除文字前圆圈*/
     /*修改圆圈为自定义图片*/
     list-style-type:none;
-    list-style-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/apple.png);
+    list-style-image: url(../assets/images/apple.png);
     margin: 5px 0px;
     }
   
@@ -217,7 +217,7 @@ footer a {
     /*list-style:none;*/ /*去除文字前圆圈*/
     /*修改圆圈为自定义图片*/
     list-style-type:none;
-    list-style-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/barrier.png);
+    list-style-image: url(../assets/images/barrier.png);
     margin: 5px 0px;
     }
 
@@ -226,7 +226,7 @@ footer a {
     /*list-style:none;*/ /*去除文字前圆圈*/
     /*修改圆圈为自定义图片*/
     list-style-type:none;
-    list-style-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/cake.png);
+    list-style-image: url(../assets/images/cake.png);
     margin: 5px 0px;
     }
 
@@ -235,7 +235,7 @@ footer a {
     /*list-style:none;*/ /*去除文字前圆圈*/
     /*修改圆圈为自定义图片*/
     list-style-type:none;
-    list-style-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/cookie.png);
+    list-style-image: url(../assets/images/cookie.png);
     margin: 5px 0px;
     }
 
@@ -283,7 +283,7 @@ footer a {
 }
 
 /*Font Awasome*/
-@fa-font-path: "https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/fontawasome/webfonts";
+@fa-font-path: "/css/fontawasome/webfonts";
 
 .circle-play {
   .fa-icon-solid(@fa-var-circle-play);
