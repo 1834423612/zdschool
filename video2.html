@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
     <meta name="referrer" content="no-referrer">
-    <title>Look Back</title>
+    <title>xgplayer</title>
     <style type="text/css">
       html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
     </style>
@@ -13,27 +13,28 @@
     <div id="mse"></div>
     <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
       <script>
-        let player = new Player({
-            "id": "mse",
-            "playsinline": true,
-            "whitelist": [
-                ""
-            ],
-            "url": "https://file.kjchmc.cn/d/忠德学校资料/放心去飞MV.mp4",
-            "fluid": false,
-            "volume": 1,
-            "screenShot": true,
-            "closeVideoDblclick": false,
-            "keyShortcut": "off",
-            "download": true,
-            "playbackRate": [
-                0.5,
-                1,
-                1.5,
-                2
-            ],
-            "poster": "https://file.kjchmc.cn/d/忠德学校资料/学校照片/poster3.png"
-        });
-    </script>
+      let player = new Player({
+		"id": "mse",
+		"url": "https://file.kjchmc.cn/d/%E5%BF%A0%E5%BE%B7%E5%AD%A6%E6%A0%A1%E8%B5%84%E6%96%99/%E6%94%BE%E5%BF%83%E5%8E%BB%E9%A3%9EMV.mp4",
+		"playsinline": true,
+		"whitelist": [
+				""
+		],
+		"poster": "https://file.kjchmc.cn/d/忠德学校资料/学校照片/poster3.png",
+		"fluid": true,
+		"x5-video-player-type": "h5",
+		"keyShortcut": "on",
+		"closeVideoClick": false,
+		"playbackRate": [
+				0.5,
+				1,
+				1.5,
+				2
+		],
+		"screenShot": true,
+		"download": true
+      });
+      
+          </script>
   </body>
 </html>
