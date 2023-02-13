@@ -10,7 +10,7 @@ npm run build
 
 ## Author
 
-Shirasawa
+Shirasawa  
 kjch(change more style)
 
 ## License
