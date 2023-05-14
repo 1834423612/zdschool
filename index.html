@@ -251,47 +251,51 @@
       <!-- <a class="version">构建号：${process.env.COMMIT_ID}</a> -->
     </footer>
   </main>
-<script>
-  $(document).ready(function () {
-    // 获取链接元素
-    var link = $('a[data-fancybox]');
-
-    // 点击链接时
-    link.click(function (event) {
-      // 阻止默认行为
-      event.preventDefault();
-
-      // 创建 iframe 元素
-      var iframe = document.createElement('iframe');
-
-      // 设置 iframe 属性
-      iframe.src = link.attr('href');
-      iframe.width = '100%';
-      iframe.height = '500px';
-      iframe.onload = function () {
-        // 获取 iframe 页面中的指定元素
-        var header = iframe.contentDocument.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
-
-        // 删除元素
-        if (header) {
-          header.remove();
-        }
-      };
-
-      // 打开 iframe
-      $.fancybox.open({
-        src: iframe,
-        type: 'iframe',
-        opts: {
-          afterClose: function () {
-            // 移除 iframe 元素
-            $(iframe).remove();
+  
+  <script>
+    $(document).ready(function() {
+      // 获取链接元素
+      var link = $('a[data-fancybox]');
+    
+      // 点击链接时
+      link.click(function(event) {
+        // 阻止默认行为
+        event.preventDefault();
+    
+        // 创建 iframe 元素
+        var iframe = document.createElement('iframe');
+    
+        // 设置 iframe 属性
+        iframe.src = link.attr('href');
+        // iframe.width = '100%';
+        // iframe.height = '500px';
+        iframe.onload = function() {
+          // 获取 iframe 页面中的指定元素
+          var header = iframe.contentDocument.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
+    
+          // 删除元素
+          if (header) {
+            header.remove();
           }
-        }
+        };
+    
+        // 添加 iframe 元素到页面 DOM 中
+        document.body.appendChild(iframe);
+    
+        // 打开 iframe
+        $.fancybox.open({
+          src: iframe,
+          type: 'iframe',
+          opts: {
+            afterClose: function() {
+              // 移除 iframe 元素
+              $(iframe).remove();
+            }
+          }
+        });
       });
     });
-  });
-</script>
+    </script>
 
   <!-- Fancybox预览样式 -->
   <script>
