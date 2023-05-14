@@ -257,16 +257,22 @@
       // 获取 iframe 元素
       var iframe = $('iframe')[0];
     
-      // 等待 iframe 载入完毕
-      iframe.onload = function() {
-        // 获取 iframe 页面中的指定元素
-        var header = iframe.contentDocument.getElementsByClassName('header hope-center hope-c-jKOUQW hope-c-PJLV hope-c-PJLV-ikgiLXI-css')[0];
+      // 点击链接时
+      $('a[data-fancybox]').click(function(event) {
+        // 阻止默认行为
+        event.preventDefault();
     
-        // 删除元素
-        header.remove();
-      };
+        // 等待一秒钟，直到 iframe 页面加载完毕
+        setTimeout(function() {
+          // 获取 iframe 页面中的指定元素
+          var header = iframe.contentDocument.getElementsByClassName('header hope-center hope-c-jKOUQW hope-c-PJLV hope-c-PJLV-ikgiLXI-css')[0];
+    
+          // 删除元素
+          header.remove();
+        }, 15000);
+      });
     });
-    </script>
+    </script>    
 
   <!-- Fancybox预览样式 -->
   <script>
