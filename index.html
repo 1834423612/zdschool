@@ -25,6 +25,10 @@
   <link type="text/css" rel="styleSheet" href="/css/shake.css" />
   <link type="text/css" rel="stylesheet" href="/css/scrollbar.css" />
   <link type="text/css" rel="styleSheet" href="/css/main.less" />
+  <!-- 允许跨域请求 -->
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
+  <!-- jquery3.4库 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
   <!-- 引入Fancybox依赖 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -247,6 +251,22 @@
       <!-- <a class="version">构建号：${process.env.COMMIT_ID}</a> -->
     </footer>
   </main>
+
+  <script>
+    $(document).ready(function() {
+      // 获取 iframe 元素
+      var iframe = $('iframe')[0];
+    
+      // 等待 iframe 载入完毕
+      iframe.onload = function() {
+        // 获取 iframe 页面中的指定元素
+        var header = iframe.contentDocument.getElementsByClassName('header hope-center hope-c-jKOUQW hope-c-PJLV hope-c-PJLV-ikgiLXI-css')[0];
+    
+        // 删除元素
+        header.remove();
+      };
+    });
+    </script>
 
   <!-- Fancybox预览样式 -->
   <script>
