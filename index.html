@@ -274,7 +274,7 @@
             // 加载 iframe 后执行的回调函数
             // 这里删除 iframe 页面中指定的元素
             onComplete: function() {
-              // 延迟10秒执行元素删除
+              // 延迟25秒执行元素删除
               setTimeout(function() {
                 var iframe = this.content;
                 var header = iframe.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
@@ -282,7 +282,7 @@
                 if (header) {
                   header.remove();
                 }
-              }.bind(this), 10000);
+              }.bind(this), 25000);
             }
           }
         });
