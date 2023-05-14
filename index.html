@@ -253,54 +253,42 @@
   </main>
 
   <script>
-$(document).ready(function() {
-  // 获取链接元素
-  var link = $('a[data-fancybox]');
-
-  // 点击链接时
-  link.click(function(event) {
-    // 阻止默认行为
-    event.preventDefault();
-
-    // 创建预加载的 iframe
-    var preloadIframe = document.createElement('iframe');
-    preloadIframe.style.display = 'none';
-    preloadIframe.src = link.attr('href');
-
-    // 添加预加载的 iframe 到页面 DOM 中
-    document.body.appendChild(preloadIframe);
-
-    // 打开 Fancybox
-    $.fancybox.open({
-      src: link.attr('href'),
-      type: 'iframe',
-      iframe: {
-        preload: preloadIframe,
-        // 加载 iframe 后执行的回调函数
-        // 这里删除 iframe 页面中指定的元素
-        css: {
-          'width': '100%',
-          'height': '100%',
-        },
-        onComplete: function() {
-          var iframe = this.content;
-          var header = iframe.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
-
-          if (header) {
-            header.remove();
+    $(document).ready(function() {
+      // 获取链接元素
+      var link = $('a[data-fancybox]');
+    
+      // 点击链接时
+      link.click(function(event) {
+        // 阻止默认行为
+        event.preventDefault();
+    
+        // 打开 Fancybox
+        $.fancybox.open({
+          src: link.attr('href'),
+          type: 'iframe',
+          iframe: {
+            css: {
+              'width': '100%',
+              'height': '100%',
+            },
+            // 加载 iframe 后执行的回调函数
+            // 这里删除 iframe 页面中指定的元素
+            onComplete: function() {
+              // 延迟10秒执行元素删除
+              setTimeout(function() {
+                var iframe = this.content;
+                var header = iframe.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
+    
+                if (header) {
+                  header.remove();
+                }
+              }.bind(this), 10000);
+            }
           }
-        }
-      },
-      opts: {
-        afterClose: function() {
-          // 从 DOM 中删除预加载的 iframe
-          $(preloadIframe).remove();
-        }
-      }
+        });
+      });
     });
-  });
-});
-</script>
+    </script>
 
   <!-- Fancybox预览样式 -->
   <script>
