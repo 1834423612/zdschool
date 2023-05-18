@@ -151,7 +151,7 @@
 
       <h1>更多图片</h1>
       <div class="more-img">
-        <a href="./assets/images/1.png" data-fancybox="group"><img src="./assets/images/1.png" /></a>
+        <a href="./assets/images/1.png" data-fancybox="group" data-download-src="./assets/images/1.png"><img src="./assets/images/1.png" /></a>
         <a href="./assets/images/2.png" data-fancybox="group"><img src="./assets/images/2.png" /></a>
         <a href="./assets/images/3.png" data-fancybox="group"><img src="./assets/images/3.png" /></a>
         <a href="./assets/images/4.png" data-fancybox="group"><img src="./assets/images/4.png" /></a>
@@ -299,16 +299,7 @@
           middle: [],
           right: ["slideshow", "download", "thumbs", "close"],
         },
-        buttons: {
-          download: {
-            default: "Download",
-            tpl: '<a download data-fancybox-download class="fancybox-button" title="{{DOWNLOAD}}" href="javascript:;"></a>',
-          },
-        },
-      },
-      i18n: {
-        DOWNLOAD: "Download",
-      },
+      }
     };
   </script>
 
