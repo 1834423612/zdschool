@@ -12,7 +12,7 @@ header {
     padding: 0 20px 0 10px;
     color: hsla(0,0%,100%,.95);
     display: flex;
-    background: url(/assets/bg-wool-dark.png) repeat-x;
+    background: url(../assets/bg-wool-dark.png) repeat-x;
     background-size: 100%;
     box-shadow: 0 5px 6px -3px rgb(0 0 0 / 20%), 0 9px 12px 1px rgb(0 0 0 / 14%), 0 3px 16px 2px rgb(0 0 0 / 12%);
 }
@@ -37,7 +37,7 @@ section.background {
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(/assets/backgrounds/bg.png);
+    background-image: url(../assets/backgrounds/bg.png);
     /*background-repeat: no-repeat;*/
     background-position: center;
     padding-top: 30vh;
