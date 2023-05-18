@@ -99,7 +99,7 @@
       </section>
       <section bp="grid vertical-center">
         <div bp="last@md 4@md 10 offset-2">
-          <a href="./assets/members.jpg" data-fancybox>
+          <a data-fancybox href="./assets/members.jpg">
             <img class="img" src="assets/members.jpg">
             <p><font class="img-small"><strong>(点击图片预览大图)</strong></font></p>
           </a>
@@ -150,7 +150,7 @@
 
       <h1>更多图片</h1>
       <div class="more-img">
-        <a href="./assets/images/1.png" data-fancybox="gallery" data-download-src="./assets/images/1.png"><img src="./assets/images/1.png" /></a>
+        <a href="./assets/images/1.png" data-fancybox="gallery"><img src="./assets/images/1.png" /></a>
         <a href="./assets/images/2.png" data-fancybox="gallery"><img src="./assets/images/2.png" /></a>
         <a href="./assets/images/3.png" data-fancybox="gallery"><img src="./assets/images/3.png" /></a>
         <a href="./assets/images/4.png" data-fancybox="gallery"><img src="./assets/images/4.png" /></a>
@@ -291,6 +291,18 @@
 
   <!-- Fancybox预览样式 -->
   <script>
+    // 单张照片
+    Fancybox.bind('[data-fancybox]', {
+      Toolbar: {
+        display: {
+          left: ["infobar"],
+          middle: [],
+          right: ["zoomIn", "zoomOut", "download", "close"],
+        },
+      }
+      });
+
+    // 照片组
     Fancybox.bind('[data-fancybox="gallery"]', {
       Toolbar: {
         display: {
