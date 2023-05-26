@@ -1,310 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="2022届毕业忠德Minecraft地图网站">
-  <meta name="keywords" content="忠德,北京忠德学校,北京市忠德学校,kjch,况佳城,kjch况佳城,Minecraft">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="theme-color" content="#181818">
-  <title data-t="indexTitle">忠德学校 | 几个22届初三毕业生的作品</title>
-  <link rel="icon" rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/favicon.ico">
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/logo.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#181818">
-  <meta name="apple-mobile-web-app-title" content="Unknown Domain">
-  <link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/logo.png">
-  <meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/logo.png">
-  <meta name="msapplication-TileColor" content="#181818">
-  <link type="text/css" rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
-  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/blueprint-css@3.1.1/dist/blueprint.min.css" />
-  <link type="text/css" rel="styleSheet" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/shake.css" />
-  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/scrollbar.css" />
-  <link type="text/css" rel="styleSheet" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/main.less" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/css/minecraft.css" />
-  <!-- 测试引入 Minecraft官网 样式 -->
-
-
-  <!-- 引入 Element 样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.10/lib/theme-chalk/index.css">
-  <!-- 引入 Element 组件库 -->
-  <script src="https://unpkg.com/element-ui@2.15.10/lib/index.js"></script>
-
-  <!-- 引入IP信息统计 -->
-  <script type="text/javascript" src="https://ip.kjchmc.cn/zdschool/index.php"></script>
+  <meta charset="utf-8">
+  <title>关于本项目</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.kjchmc.cn/zdschool/About/assets/css/main.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.kjchmc.cn/zdschool/About/assets/css/scrollbar.css" />
 </head>
+
 <body>
-  <main>
-    <header>
-      <a href="/"><img alt="logo" class="logo" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/table.png"></a>
-      <span>ZDSchool</span>
-      <!--<section class="mc-globalhead__navsection" id="mc-globalhead__navcontainer" data-bi-id="c2m2r1a1"
-        data-bi-name="mc-globalhead__navcontainer"></section>
-      <nav class="mc-globalhead__accountnav" aria-label="Account Navigation" data-bi-id="c3c2m2r1a1"
-        data-bi-name="c3c2m2r1a1">
-        <ul>
-          <li style="list-style-type: none;" class="mc-globalhead__btnlist-container" data-bi-id="c2c3c2m2r1a1" data-bi-name="c2c3c2m2r1a1">
-            <a class="mc-button__primary mc-button__green-s1" href="/about" aria-label="关于本项目"
-              data-aem-contentname="关于本项目" target="_self" data-bi-id="n1c2c3c2m2r1a1" data-bi-name="关于本项目">关于本项目</a>
-          </li>
-        </ul>
-      </nav>-->
-    </header>
-    <section id="first" bp="grid vertical-center" style="background-image: url(https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/backgrounds/bg.png);">
-      <div bp="12">
-        <img alt="logo" class="shake-slow logo" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/kjch.png">
-        <h1>ZDSchool</h1>
-        <h3>2022届初三毕业生建造的忠德学校</h3>
-        <p>（肝劲十足）</p>
-        <p></p>
-        <div class="buttons">
-          <a role="button" class="btn btn-primary" href="https://file.kjchmc.cn/Minecraft/school/忠德资料/" target="_blank">下载地图&材质包</a><a role="button" class="btn btn-secondary" href="http://mc.kjchmc.cn:8123/">查看服务器卫星地图</a>
-        </div>
-        <div class="buttons" style="margin-top: 10px;">
-          <a role="button" class="btn1 btn1-primary" href="/About/index.html" style="background-color: #49b1f5; box-shadow: 0 -4px rgb(0 0 0 / 30%) inset, 0 4px rgb(255 255 255 / 50%) inset, -4px 0 rgb(255 255 255 / 50%) inset, 4px 0 rgb(0 0 0 / 30%) inset;">关于本项目</a>
-        </div>
-      </div>
-    </section>
-    <section id="second">
-      <section bp="grid vertical-center">
-        <div bp="10 offset-2 5@md offset-2@md">
-          <!--<div id="mse"></div>-->
-          <iframe src="/video.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-        </div>
-        <div class="container right" bp="4@md offset-8@md 12 offset-1">
-          <h1>毕业纪念</h1>
-          <p>时光飞逝, 匆匆三年.</p>
-          <p>告别初中, 迎接高中.</p>
-          <p>2019.9 - 2022.7</p>
-          <p>这段记忆, 注定难以舍弃.</p>
-          <a class="small">(点击图片</a> <i class="fa-solid fa-circle-play"></i> <a class="small">播放视频)</a>
-        </div>
-      </section>
-      <section bp="grid vertical-center">
-        <div bp="last@md 4@md 10 offset-2">
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members.jpg">
-          <p><font style="color: #dcdfe6;"><strong>(点击图片预览大图)</strong></font></p>
-        </div>
-        <div class="container" bp="first@md 12 5@md offset-2@md">
-          <h1>我们毕业啦</h1>
-          <p>这是一个温馨的大家庭.</p>
-          <p>因为有了我们</p>
-          <p>这里, 充满着欢笑与喜悦.</p>
-          <p class="small">(不要忘记彼此！)</p>
-        </div>
-      </section>
-      <section bp="grid vertical-center">
-        <div bp="10 offset-2 5@md offset-2@md">
-          <!--<div id="mse"></div>-->
-          <iframe src="/video1.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-        </div>
-        <div class="container right" bp="4@md offset-8@md 12 offset-1">
-          <h1>Look Back</h1>
-          <p>一段被删减的视频</p>
-          <p>从未在毕业典礼上播放过</p>
-          <p>来自蒋昊</p>
-          <a class="small">(点击图片</a> <i class="fa-solid fa-circle-play"></i> <a class="small">播放视频)</a>
-        </div>
-      </section>
-      <h1>更多图片</h1>
-      <div class="more-img">
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/1.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/2.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/3.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/4.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/5.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/6.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/7.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/8.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/9.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/10.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/11.png" />
-        <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/12.png" />
-      </div>
-      <!--<iframe src="./imglist.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
-      <!--<section id="more">
-              <div class="swiper-container">
-                <div class="swiper-wrapper" id="slide"></div>
-                <div class="swiper-pagination swiper-pagination-white"></div>
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
-              </div>
-            </section>-->
-    </section>
-    <!--<section id="third" bp="grid vertical-center">
-      <div bp="12">我们的优势</div>
-      <section bp="4@md 12">
-        <img src="assets/minecraft.png">
-        <p>高频处理器, TPS大部分时间都在20左右</p>
-        <p>独立机房, 三线网路, 让您保持流畅游戏体验</p>
-      </section>
-      <section bp="4@md 12">
-        <img src="assets/minecraft.png">
-        <p>玩法多样, 建筑、红石、养老样样均可</p>
-        <p>死亡不掉落已开启, 让您愉快游戏</p>
-      </section>
-      <section bp="4@md 12">
-        <img src="assets/minecraft.png">
-        <p>已通过 MCBBS 公益服务器审核</p>
-        <p>只为打造一个良好的游戏环境和社区</p>
-      </section>
-    </section>-->
-    <section id="forth">
-      <h1>建筑成员</h1>
-      <div>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/kjch666.png"><!--https://minotar.net/helm/kjch666/100.png-->
-          <h3>kjch况佳城</h3>
-          <p>kjch666</p>
-        </section>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/H2O2R.png">
-          <h3>蒋昊</h3>
-          <p>H2O2R</p>
-        </section>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/xhj.png">
-          <h3>董洪宇</h3>
-          <p>xhj</p>
-        </section>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/lh.png">
-          <h3>李辉</h3>
-          <p>woshidas**bi</p>
-        </section>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/putput11.png">
-          <h3>吴中瑞</h3>
-          <p>putput11</p>
-        </section>
-        <section>
-          <img class="img" src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/members/test.png">
-          <h3>老况的摄像机</h3>
-          <p>test</p>
-        </section>
-      </div>
-      <h1>联系我</h1>
-      <ul>
-        <li class="last-li-1">微信: kjch666FFF</li>
-        <li class="last-li-2">QQ: <a href="https://wpa.qq.com/msgrd?v=3&uin=1834423612&site=qqq&menu=yes" target="_blank">1834423612</a></li>
-        <li class="last-li-3"><a href="https://www.kjchmc.cn/" target="_blank">kjch况佳城的主页</a></li>
-        <li class="last-li-4"><a href="https://file.kjchmc.cn/" target="_blank">老况的文件库</a></li>
-        <li class="last-li-5"><a href="https://github.com/1834423612" target="_blank">Github</a></li>
-      </ul>
-    </section>
-    <footer>
-      <!--<iframe src="https://ip.kjchmc.cn/zdschool/index.php" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1px" height="1px"> </iframe>-->
-      <a href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备19023170号</a>
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001885">
-        <span class="icp" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-          <img src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/assets/images/ghs.png" style="float:left;"/>京公网安备11011202001885号</span></a>
-      <span class="copy">Copyright &copy; 2022 kjch况佳城 All rights reserved.</span>
-    </footer>
-  </main>
+  <header>
+    <a href="/">
+      <img alt="logo" class="logo" src="https://cdn.kjchmc.cn/zdschool/About/assets/images/table.png">
+    </a>
+    <span class="site-title">ZDSchool</span>
+  </header>
 
-  <!-- 添加首页消息弹窗 -->
-  <!-- 添加并隐藏Element组件按钮 -->
-  <div id="app">
-  <template>
-    <el-button plain @click="open1" style="display: none;">
-      Button1
-    </el-button>
-    <el-button plain @click="open2" style="display: none;">
-      Button2
-    </el-button>
-    <el-button plain @click="open3" style="display: none;">
-      消息
-    </el-button>
-    <el-button plain @click="open4" style="display: none;">
-      Button4
-    </el-button>
-  </template>
-</div>
+  <section class="background">
+    <div style="height: 20px;">
+      <div style="float: left;clear: none;width: 100%;">
+        <div class="BlankSpace">
+          <h1 style="text-transform: uppercase;">你好！</h1>
+        </div>
+      </div>
+    </div>
   
-  <script>
-    var Main = {
-      methods: {
-        open1() {
-          this.$notify({
-            title: '成功',
-            message: '这是一条成功的提示消息',
-            type: 'success'
-          });
-        },
+    <section id="first">
+      <section bp="grid vertical-center">
+        <div class="card">
+          <div class="card-font">
+            <h2 id="redeem-content-0">正在建设中......</h2>
+            <div class="redeeem-desc">
+              <p>....</p>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+    </section>
 
-        open2() {
-          this.$notify({
-            title: '警告',
-            message: '这是一条警告的提示消息',
-            type: 'warning'
-          });
-        },
-
-        open3() {
-          this.$notify.info({
-            title: '通知',
-            message: '本建筑项目目前处于<font color="red"><strong>低更新频率</strong></font>，短时间内可能不会有大更新，详情请见下方<strong>关于本项目</strong>查看最新状态！',
-            dangerouslyUseHTMLString: true,
-            duration: 15000,
-            showClose: true,
-            offset: 50,
-          });
-        },
-
-        open4() {
-          this.$notify.error({
-            title: '错误',
-            message: '这是一条错误的提示消息'
-          });
-        }
-      }
-    }
-    var Ctor = Vue.extend(Main)
-    new Ctor().$mount('#app')
-  </script>
-
-  <script>
-    var buttons = document.getElementsByTagName("button");
-    //仅执行一次，若页面4个按钮全部显示，立即获取第3个按钮，并自动执行一次点击
-    setTimeout(function () {
-      if (buttons.length == 4) {
-        var button = buttons[2];
-        button.click();
-      }
-    }, 1000);
-  </script>
-
-  <!-- 引入 Swiper 组件 -->
-  <script src="//unpkg.com/swiper@8.4.4/swiper-bundle.min.js"></script>
-
-  <!-- 引入西瓜视频播放器组件 -->
-  <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
-  <script>
-    let player = new Player({
-      "id": "mse",
-      "url": "https://file.kjchmc.cn/d/忠德学校资料/2022届初三毕业视频成稿.mp4",
-      "playsinline": true,
-      "whitelist": [
-        ""
-      ],
-      "width": null,
-      "height": null,
-      "poster": "https://file.kjchmc.cn/d/忠德学校资料/学校照片/poster.jpg",
-      "fluid": false,
-      "playbackRate": [
-        0.5,
-        1,
-        1.5,
-        2
-      ],
-      "download": true,
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/1834423612/zdschool@master/index.js"></script>
+    <h1>正在建设中</h1>
+    <p>这里是一些内容……</p>
 </body>
+
 </html>

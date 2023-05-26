@@ -25,11 +25,14 @@
   <link type="text/css" rel="styleSheet" href="/css/shake.css" />
   <link type="text/css" rel="stylesheet" href="/css/scrollbar.css" />
   <link type="text/css" rel="styleSheet" href="/css/main.less" />
+  <!-- 允许跨域请求 -->
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'">
+  <!-- jquery3.4库 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
   <!-- 引入Fancybox依赖 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -96,7 +99,7 @@
       </section>
       <section bp="grid vertical-center">
         <div bp="last@md 4@md 10 offset-2">
-          <a href="./assets/members.jpg" data-fancybox>
+          <a data-fancybox href="./assets/members.jpg">
             <img class="img" src="assets/members.jpg">
             <p><font class="img-small"><strong>(点击图片预览大图)</strong></font></p>
           </a>
@@ -147,24 +150,24 @@
 
       <h1>更多图片</h1>
       <div class="more-img">
-        <a href="./assets/images/1.png" data-fancybox="group"><img src="./assets/images/1.png" /></a>
-        <a href="./assets/images/2.png" data-fancybox="group"><img src="./assets/images/2.png" /></a>
-        <a href="./assets/images/3.png" data-fancybox="group"><img src="./assets/images/3.png" /></a>
-        <a href="./assets/images/4.png" data-fancybox="group"><img src="./assets/images/4.png" /></a>
-        <a href="./assets/images/5.png" data-fancybox="group"><img src="./assets/images/5.png" /></a>
-        <a href="./assets/images/6.png" data-fancybox="group"><img src="./assets/images/6.png" /></a>
-        <a href="./assets/images/7.png" data-fancybox="group"><img src="./assets/images/7.png" /></a>
-        <a href="./assets/images/8.png" data-fancybox="group"><img src="./assets/images/8.png" /></a>
-        <a href="./assets/images/9.png" data-fancybox="group"><img src="./assets/images/9.png" /></a>
-        <a href="./assets/images/10.png" data-fancybox="group"><img src="./assets/images/10.png" /></a>
-        <a href="./assets/images/11.png" data-fancybox="group"><img src="./assets/images/11.png" /></a>
-        <a href="./assets/images/12.png" data-fancybox="group"><img src="./assets/images/12.png" /></a>
-        <a href="./assets/images/13.png" data-fancybox="group"><img src="./assets/images/13.png" /></a>
-        <a href="./assets/images/14.png" data-fancybox="group"><img src="./assets/images/14.png" /></a>
-        <a href="./assets/images/15.png" data-fancybox="group"><img src="./assets/images/15.png" /></a>
-        <a href="./assets/images/16.png" data-fancybox="group"><img src="./assets/images/16.png" /></a>
-        <a href="./assets/images/17.png" data-fancybox="group"><img src="./assets/images/17.png" /></a>
-        <a href="./assets/images/18.png" data-fancybox="group"><img src="./assets/images/18.png" /></a>
+        <a href="./assets/images/1.png" data-fancybox="gallery"><img src="./assets/images/1.png" /></a>
+        <a href="./assets/images/2.png" data-fancybox="gallery"><img src="./assets/images/2.png" /></a>
+        <a href="./assets/images/3.png" data-fancybox="gallery"><img src="./assets/images/3.png" /></a>
+        <a href="./assets/images/4.png" data-fancybox="gallery"><img src="./assets/images/4.png" /></a>
+        <a href="./assets/images/5.png" data-fancybox="gallery"><img src="./assets/images/5.png" /></a>
+        <a href="./assets/images/6.png" data-fancybox="gallery"><img src="./assets/images/6.png" /></a>
+        <a href="./assets/images/7.png" data-fancybox="gallery"><img src="./assets/images/7.png" /></a>
+        <a href="./assets/images/8.png" data-fancybox="gallery"><img src="./assets/images/8.png" /></a>
+        <a href="./assets/images/9.png" data-fancybox="gallery"><img src="./assets/images/9.png" /></a>
+        <a href="./assets/images/10.png" data-fancybox="gallery"><img src="./assets/images/10.png" /></a>
+        <a href="./assets/images/11.png" data-fancybox="gallery"><img src="./assets/images/11.png" /></a>
+        <a href="./assets/images/12.png" data-fancybox="gallery"><img src="./assets/images/12.png" /></a>
+        <a href="./assets/images/13.png" data-fancybox="gallery"><img src="./assets/images/13.png" /></a>
+        <a href="./assets/images/14.png" data-fancybox="gallery"><img src="./assets/images/14.png" /></a>
+        <a href="./assets/images/15.png" data-fancybox="gallery"><img src="./assets/images/15.png" /></a>
+        <a href="./assets/images/16.png" data-fancybox="gallery"><img src="./assets/images/16.png" /></a>
+        <a href="./assets/images/17.png" data-fancybox="gallery"><img src="./assets/images/17.png" /></a>
+        <a href="./assets/images/18.png" data-fancybox="gallery"><img src="./assets/images/18.png" /></a>
       </div>
       <!--<iframe src="./imglist.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
       <!--<section id="more">
@@ -248,17 +251,67 @@
     </footer>
   </main>
 
+  <!-- <script>
+    $(document).ready(function() {
+      // 获取链接元素
+      var link = $('a[data-fancybox]');
+    
+      // 点击链接时
+      link.click(function(event) {
+        // 阻止默认行为
+        event.preventDefault();
+    
+        // 打开 Fancybox
+        $.fancybox.open({
+          src: link.attr('href'),
+          type: 'iframe',
+          iframe: {
+            css: {
+              'width': '100%',
+              'height': '100%',
+            },
+            // 加载 iframe 后执行的回调函数
+            // 这里删除 iframe 页面中指定的元素
+            onComplete: function() {
+              // 延迟25秒执行元素删除
+              setTimeout(function() {
+                var iframe = this.content;
+                var header = iframe.querySelector('.header.hope-center.hope-c-jKOUQW.hope-c-PJLV.hope-c-PJLV-ikgiLXI-css');
+    
+                if (header) {
+                  header.remove();
+                }
+              }.bind(this), 25000);
+            }
+          }
+        });
+      });
+    });
+    </script> -->
+
   <!-- Fancybox预览样式 -->
   <script>
-    const options = {
+    // 单张照片
+    Fancybox.bind('[data-fancybox]', {
+      Toolbar: {
+        display: {
+          left: ["infobar"],
+          middle: [],
+          right: ["zoomIn", "zoomOut", "download", "close"],
+        },
+      }
+      });
+
+    // 照片组
+    Fancybox.bind('[data-fancybox="gallery"]', {
       Toolbar: {
         display: {
           left: ["infobar"],
           middle: [],
           right: ["slideshow", "download", "thumbs", "close"],
         },
-      },
-    };
+      }
+    });
   </script>
 
   <!-- 添加首页消息弹窗 -->

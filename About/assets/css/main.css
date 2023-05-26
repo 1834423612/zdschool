@@ -1,0 +1,83 @@
+body {
+    /* margin: 12vh 4vw 0vw 4vw; */
+    margin: 0 !important;
+}
+
+header {
+    top: -1px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    padding: 0 20px 0 10px;
+    color: hsla(0,0%,100%,.95);
+    display: flex;
+    background: url(https://cdn.kjchmc.cn/zdschool/About/assets/images/bg-wool-dark.png) repeat-x;
+    background-size: 100%;
+    box-shadow: 0 5px 6px -3px rgb(0 0 0 / 20%), 0 9px 12px 1px rgb(0 0 0 / 14%), 0 3px 16px 2px rgb(0 0 0 / 12%);
+}
+
+.logo {
+    height: 56px;
+    image-rendering: pixelated;
+}
+
+.site-title {
+    font-family: minecraft;
+    margin-left: 10px;
+    line-height: 56px;
+    font-size: 1.3rem;
+    margin-top: 0.1rem;
+}
+
+section.background {
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://cdn.kjchmc.cn/zdschool/About/assets/images/bg.png);
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+    padding-top: 30vh;
+}
+
+.BlankSpace {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first {
+    margin-right: 7vw;
+    margin-left: 7vw;
+}
+
+#first div.card {
+    background-color: rgb(177 214 251 / 45%); /*#f2e6ac*/
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 7vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    justify-content: center; /* 修改为居中对齐 */
+    align-items: center; /* 修改为居中对齐 */
+    border-radius: 10px; /*圆角*/
+    background: rgba(255, 255, 255, 0.1); /*浅白遮罩*/
+    backdrop-filter: blur(15px); /*模糊程度 30px*/
+    border: 2px solid rgba(255, 255, 255, 0.1); /*卡片白描边*/
+    box-shadow: 0 0 80px rgb(0 0 0 / 25%); /*卡片阴影*/
+    padding: 20px 30px 30px 30px;
+    
+}
+
+#first div.card-cont {
+    text-align: left;
+    /* position: relative; */
+    font-size: 15px;
+}
