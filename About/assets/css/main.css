@@ -57,11 +57,23 @@ section.background {
 }
 
 #first div.card {
-    background-color: #f2e6ac;
-    width: auto;
-    padding: 30px;
-    margin: 0 auto;
+    background-color: rgb(177 214 251 / 45%); /*#f2e6ac*/
     display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 7vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    justify-content: center; /* 修改为居中对齐 */
+    align-items: center; /* 修改为居中对齐 */
+    border-radius: 10px; /*圆角*/
+    background: rgba(255, 255, 255, 0.1); /*浅白遮罩*/
+    backdrop-filter: blur(15px); /*模糊程度 30px*/
+    border: 2px solid rgba(255, 255, 255, 0.1); /*卡片白描边*/
+    box-shadow: 0 0 80px rgb(0 0 0 / 25%); /*卡片阴影*/
+    padding: 20px 30px 30px 30px;
+    
 }
 
 #first div.card-cont {
